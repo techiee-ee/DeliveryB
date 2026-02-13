@@ -20,7 +20,7 @@ export default function Profile() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/profile/me", {
+      .get("https://deliverybackend-0i61.onrender.com/api/profile/me", {
         withCredentials: true
       })
       .then(res => {
@@ -64,7 +64,7 @@ export default function Profile() {
     setSaving(true);
     try {
       const res = await axios.put(
-  "http://localhost:5000/api/profile/update",
+  "https://deliverybackend-0i61.onrender.com/api/profile/update",
   {
     phone: form.phone,
     address: {

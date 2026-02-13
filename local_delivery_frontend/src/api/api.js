@@ -1,13 +1,13 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://deliverybackend-0i61.onrender.com/api",
   withCredentials: true // IMPORTANT for Google session auth
 });
 
 // ---------- AUTH ----------
 export const googleLogin = () => {
-  window.location.href = "http://localhost:5000/api/auth/google";
+  window.location.href = "https://deliverybackend-0i61.onrender.com/api/auth/google";
 };
 
 // ---------- RESTAURANTS ----------

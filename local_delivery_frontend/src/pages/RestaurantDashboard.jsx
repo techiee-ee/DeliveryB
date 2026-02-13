@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import LocationPicker from "../components/LocationPicker";
 
-const API = "http://localhost:5000";
+const API = "https://deliverybackend-0i61.onrender.com";
 
 export default function RestaurantDashboard() {
   const [restaurant, setRestaurant] = useState(null);

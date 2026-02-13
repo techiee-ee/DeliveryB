@@ -33,7 +33,7 @@ export default function Cart() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const menuResponse = await axios.get(`http://localhost:5000/api/menu/${restaurantId}`);
+        const menuResponse = await axios.get(`https://deliverybackend-0i61.onrender.com/api/menu/${restaurantId}`);
         setMenuItems(menuResponse.data);
         
         // Extract restaurant info from first menu item
@@ -183,7 +183,7 @@ export default function Cart() {
       };
 
       // Send order to backend
-      const response = await axios.post('http://localhost:5000/api/orders', orderData, {
+      const response = await axios.post('https://deliverybackend-0i61.onrender.com/api/orders', orderData, {
         withCredentials: true
       });
 

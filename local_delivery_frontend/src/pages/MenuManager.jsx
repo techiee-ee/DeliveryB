@@ -22,11 +22,11 @@ export default function MenuManager() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/restaurants/my", {
+      .get("https://deliverybackend-0i61.onrender.com/api/restaurants/my", {
         withCredentials: true
       })
       .then(res =>
-        axios.get(`http://localhost:5000/api/menu/${res.data._id}`)
+        axios.get(`https://deliverybackend-0i61.onrender.com/api/menu/${res.data._id}`)
       )
       .then(res => {
         setMenu(res.data);
@@ -121,7 +121,7 @@ export default function MenuManager() {
       }
 
       const res = await axios.post(
-        "http://localhost:5000/api/menu/add",
+        "https://deliverybackend-0i61.onrender.com/api/menu/add",
         formData,
         {
           withCredentials: true,

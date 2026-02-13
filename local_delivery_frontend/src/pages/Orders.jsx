@@ -23,7 +23,7 @@ export default function Orders() {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/orders/my-orders', {
+      const response = await axios.get('https://deliverybackend-0i61.onrender.com/api/orders/my-orders', {
         withCredentials: true
       });
 
@@ -47,7 +47,7 @@ export default function Orders() {
 
     try {
       const response = await axios.patch(
-        `http://localhost:5000/api/orders/${orderId}/cancel`,
+        `https://deliverybackend-0i61.onrender.com/api/orders/${orderId}/cancel`,
         {},
         { withCredentials: true }
       );

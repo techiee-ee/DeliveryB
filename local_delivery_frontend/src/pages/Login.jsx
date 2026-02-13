@@ -1,12 +1,12 @@
 export default function Login() {
   const loginAsUser = () => {
     window.location.href =
-      "http://localhost:5000/api/auth/google?role=USER";
+      "https://deliverybackend-0i61.onrender.com/api/auth/google?role=USER";
   };
 
   const loginAsRestaurant = () => {
     window.location.href =
-      "http://localhost:5000/api/auth/google?role=RESTAURANT";
+      "https://deliverybackend-0i61.onrender.com/api/auth/google?role=RESTAURANT";
   };
 
   return (
