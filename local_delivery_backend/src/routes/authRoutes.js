@@ -26,9 +26,9 @@ router.get(
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
      if (req.user.role === "RESTAURANT") {
-      res.redirect("http://localhost:5173/restaurant/dashboard");
+      res.redirect("https://barhalganjdelivery.vercel.app/restaurant/dashboard");
     } else {
-      res.redirect("http://localhost:5173/restaurants");
+      res.redirect("https://barhalganjdelivery.vercel.app/restaurants");
     }
   }
 );
